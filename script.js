@@ -59,5 +59,20 @@ var todoList = {
     // Displays todos after they have been toggled
     this.displayTodos();
   }
-  
 };
+
+// access the 'Display Todos' button
+var displayTodosButton = document.getElementById('displayTodosButton');
+
+// run display todos method when user clicks 'Display Todos' button
+displayTodosButton.addEventListener('click', function() {
+  todoList.displayTodos();
+})
+
+// access the 'Toggle All' button
+var toggleAllButton = document.getElementById('toggleAllButton');
+
+// run display todos method when user clicks 'Display Todos' button
+toggleAllButton.addEventListener('click', function() {
+  todoList.toggleAll();
+})
